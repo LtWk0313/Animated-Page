@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template For Project 1</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/gsap.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <script src="scrolls.js" defer></script>
+    <script src="Lab01/Hamburger_Menu/hamburger_script.js" defer></script>
+    <script src="gsap_script.js" defer></script>
+
+</head>
+<body>
+    <nav id="navbar">
+        <a href="#intro">Intro</a>
+        <a href="#one">GIFs</a>
+        <a href="#two">CSS Buttons</a>
+        <a href="#three">CSS Animations</a>
+        <a href="#four">GSAP Animations</a>
+    </nav>
+    <main>
+        <section id="intro">
+            <div class="content">
+                <h2><br><br>Introduction Page</h2>
+                <p>I am Kevin who is currently studying Interactive Media Design at Durham College. <br>
+                   Let me introduce my hometown Hong Kong with my video!</p>
+                <video id="HK_Introduction" autoplay loop volume="1">
+                 <source src="HK_Introduction.mp4" type="video/mp4">
+            </div>
+        </section>
+        <section id="one">
+            <h2>GIFs</h2>
+            <div id="onediv">
+                  <div id="GIF_01">
+                  <h3>Koala's Greeting</h3>  
+                  <a><img src="Lab01/GIF_1_New_1.gif" alt="GIF_01" style="width:400px;height:400px;"></a>
+                  </div>
+                  <div id="GIF_02">
+                  <h3>The Milk Tea Rhapsody</h3>  
+                  <img src="Lab01/GIF_2_New.gif" alt="GIF_02" style="width:400px;height:400px;">
+                  </div>
+                  <div id="GIF_03">
+                  <h3>The Hamburger Menu</h3>  
+                  <img id="hammy" src="Lab01/Hamburger_Menu/menu_bw_static.gif" alt="GIF_03" style="width:400px;height:400px;">
+                 <br><br><a id="instruction">Click Menu to Animate</a>
+                 </div>
+            </div>
+        </section>
+        <section id="two">
+            <h2>CSS Buttons</h2>
+            <div id="btnContainer">
+                <div class="button" id="btn1">button1</div>
+                <div class="button" id="btn2">button two</div>
+                <div class="button" id="btn3">button3</div>
+                <div class="button" id="btn4">button4</div>
+                <div class="button" id="btn5"><br>button five</div> 
+            </div>
+        </section>
+        <section id="three">
+            <h2 id="animetitle">CSS Animations</h2>
+            <h2 id="anime1title"> Japanese Family Crest (家紋 かもん Kamon) -- Migi Mitsudomoe（右三ツ巴）</h2>
+                <div id="holder">
+                    <div class="balls1" id="ball1"><img src="Lab02-Balls/Balls/Ball1_Gold.png"></div>
+                    <div class="balls2" id="ball2"><img src="Lab02-Balls/Balls/Ball2_Gold.png"></div>
+                    <div class="balls3" id="ball3"><img src="Lab02-Balls/Balls/Ball3_Gold.png"></div>
+                </div>      
+            <h2 id="anime2title"> Japanese Family Crest (家紋 かもん Kamon) -- Tokugawa Aoi（德川葵）</h2>  
+                <div id="holder2"> 
+                    <div id="balls4"><img src="Lab02-Balls/Balls/Ball4.png"></div>
+                    <div id="balls5"><img src="Lab02-Balls/Balls/Ball5.png"></div>
+                    <div id="balls6"><img src="Lab02-Balls/Balls/Ball6.png"></div>
+                </div>
+        </section>
+        <section id="four">
+            <h2 id="fourtitle">GSAP Animations</h2>
+            <div class="divgsap" id="rectdiv">
+                <h3>Transforming ...</h3>
+                <button id="rectbutton">Animate Green Rectangle</button>
+                <div id="greenrectangle"></div>
+            </div>
+            <div class="divgsap" id="imgdiv">
+                <h3>Flying ...</h3>
+                <button id="imgbutton">Animate Image</button>
+                <div id="image">
+                    <img id="airplaneimg" src="Lab03/images/airplane.jpg">
+                </div>
+            </div>
+            <div class="divgsap" id="circlediv">
+                <h3>Bouncing ...</h3>
+                <button id="ballbutton">Animate Blue Circle</button>
+                <div id="bluecircle"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

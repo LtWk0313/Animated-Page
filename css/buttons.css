@@ -1,0 +1,252 @@
+#btnContainer{
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+.button{
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    border: transparent;
+}
+
+#btn1{
+    width: 150px ;
+    height: 150px ;
+    display: inline-block;
+    text-align:center;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0 25px 0 0;
+    border-left: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-bottom: 8px double outset #046997;
+    transform: scale(50%);
+    border-radius: 50%;
+    top: -40px;
+    position: relative;
+}
+
+#btn1:hover {
+    animation: BlackDisc  10s;
+}
+
+@keyframes BlackDisc {
+    0% {
+    transform: rotate(0deg) scale(50%);
+    background-color: #2dc937;
+      }
+    10%{
+    transform: rotate(40deg) scale(55%);    
+    background-color: #99c140;
+    }
+    20%{
+    transform: rotate(80deg) scale(60%);  
+    background-color: #e7b416; 
+    }
+    30%{
+    transform: rotate(120deg) scale(65%);   
+    background-color: #db7b2b;   
+    }
+    40%{
+    transform: rotate(160deg) scale(70%);  
+    background-color: #cc3232;  
+    }
+    50%{
+    transform: rotate(200deg) scale(65%);    
+    background-color: #cc3232; 
+    }
+    60%{
+    transform: rotate(240deg) scale(60%);
+    background-color: #db7b2b;     
+    }
+    70%{
+    transform: rotate(280deg) scale(55%);     
+    background-color: #e7b416; 
+    }
+    80%{
+    transform: rotate(320deg) scale(60%);   
+    background-color: #99c140; 
+    }
+    100%{
+    transform: rotate(360deg) scale(65%);  
+    background-color: #2dc937;
+        }
+
+}
+
+#btn2{
+    width: 250px ;
+    height: 50px ;
+    display: inline-block;
+    margin: 0 25px 0 0;
+    background-color: #ffffff;
+    color: #FF1493;
+    text-align: center;
+    border: transparent;
+}
+
+#btn2:hover {
+    animation: broadway-sign 10s;
+}
+
+@keyframes broadway-sign {
+    0% {
+    border-left: 6px dotted #CE8E00;
+    color: #CE8E00;
+      }
+    10%{   
+    border-top: 6px dotted #FC6E22;
+    color: #FC6E22;
+    }
+    20%{   
+        border-top: 6px dotted #FF1493;
+        color: #FF1493;
+        border-left:transparent;
+        }  
+    30%{
+         border-right: 6px dotted #C24CF6;
+         color: #C24CF6;
+    }  
+    40%{
+        border-right: 6px dotted #3E00FD;
+        color: #3E00FD;
+        border-top:transparent;
+   }     
+    50% {
+        border-bottom: 6px dotted #6AFF00;
+        color: #6AFF00;
+    }
+    60% {
+        border-bottom: 6px dotted #4AB300;
+        color: #4AB300;
+        border-right:transparent;
+    }
+    70% {
+        border-left: 6px dotted #CE8E00;
+        color: #CE8E00;
+          }
+     80%{   
+        border-top: 6px dotted #FC6E22;
+        color: #FC6E22;
+        border-bottom:transparent;
+        }
+    90%{   
+         border-top: 6px dotted #FF1493;
+        color: #FF1493;
+
+            }  
+    100%{
+        border-right: 6px dotted #C24CF6;
+         color: #C24CF6;
+        }  
+}
+
+
+
+#btn3{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 0 25px 0 0;
+    text-align: center;
+    border-radius: 50%;
+    background: #FFB845;
+    border: transparent;
+    color: white ;
+    transform: scale(50%);
+    top: -60px;
+    position: relative;
+}
+
+#btn3:hover{
+    animation: color-me-in 5s;
+}
+
+@keyframes color-me-in {
+    /* You could think of as "step 1" */
+    0% {
+      background: orange;
+    }
+    25%{
+      background: linear-gradient(#FFB845,#FFB845, #FFB845, #F97698);
+      border: 1px dotted #F7E752 ;
+      transform: scale(60%);
+    }
+    /* You could think of as "step 2" */
+    50%{
+        background: linear-gradient(#FFB845,#FFB845, #FFB845, #F97698,#712275);
+        border: 2px dotted #F7E752 ;
+      }
+    75% {
+        background: linear-gradient(#FFB845,#FFB845, #FFB845, #F97698  ,#712275,#362FBB);
+        border: 1px dotted #F7E752 ;
+    }
+    100%{
+        background: linear-gradient(#FFB845,#FFB845, #FFB845, #F97698  ,#712275,#362FBB);
+        transform: scale(70%);
+    }
+  }
+
+/*#btn4{
+    width: 0px;
+    height: 0px;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 120px solid #362FBB;  Blue color 
+    position: relative;
+    font-size: 15px;
+    text-align: left;
+    display: inline-block;
+    margin: 0 70px 0 0;
+    top: -30px;
+}
+*/
+
+
+#btn4{
+    width: 250px ;
+    height: 50px ;
+    display: inline-block;
+    margin: 0 50px 0 0;
+    background: linear-gradient(90deg,#F7E752,#E9AB17, #000000, #F7E752,#E9AB17, #000000, #F7E752,#E9AB17, #000000, #F7E752, #E9AB17,#000000, #F7E752, #E9AB17);
+    color: white;
+    border: transparent;
+}
+
+#btn4:hover{
+    animation: bee 3s;
+}
+
+@keyframes bee{
+    0%{ 
+        box-shadow: transport;
+        border-radius: 0%;
+    }
+    100%{
+        box-shadow: 8px 10px 35px 5px #F7E752;
+        border-radius: 70%;
+    }
+}
+
+#btn5{
+    width: 150px ;
+    height: 150px ;
+    display: inline-block;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    margin: 0 0 0 0;
+    background-image: linear-gradient(#ffffff,#a0e6ec);
+    border: transparent;
+    color: white;
+
+    transition: 
+     transform .8s ease,
+     background-image .8s ease;
+}
+
+#btn5:hover{
+    background-image: linear-gradient(#ffffff,#ecfffd,#d0eceb,#a0e6ec,#94f2f4);
+    box-shadow: 80px 10px 35px 5px #ecfffd;
+    transform: rotate(5deg) scale(90%,90%);
+}

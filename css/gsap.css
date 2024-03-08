@@ -1,0 +1,72 @@
+.divgsap{
+    border: solid 2px #ffffff;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    opacity:0;
+    font-size: 50px;
+}
+
+h3{
+    background-color: #ffffff;
+    padding:0.5rem;
+}
+
+button{
+    margin:1rem;           /*cannot align buttons at the center */
+    color: #67032F;
+    background-color: #ffffff;
+    height: 50px;
+    width: 250px;
+    font-size: 15px;
+    border-radius: 50%;
+    border: 2px solid #67032F;
+}
+ 
+
+#rectdiv{
+    height: 280px; 
+    background-image: url(/Lab03/images/background_02.png) ;
+}
+
+#greenrectangle{
+    background-color:#AEF359 ;
+    width: 200px;
+    height: 100px;
+    margin: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#imgdiv{
+   height: 300px;
+   background-image: url(/Lab03/images/background_02.png) ;
+}
+
+#image{
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;  /*(1) Cannot work for left margin: 100px*/
+    opacity: 1; /* (2) Cannot run the code with opacity:0 in setting and user doesn't know how to execute?*/
+    margin: 2rem;
+}
+#airplaneimg{
+    opacity: 0;
+}
+
+#circlediv{
+    height: 400px;
+    background-image: url(/Lab03/images/background_02.png) ;
+}
+
+#bluecircle{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: #0072A0; 
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    margin:2rem;
+}

@@ -1,0 +1,202 @@
+* {
+    margin:0;
+    padding: 0;
+    font-size: 16px;
+}
+
+#holder{
+    width:650px;
+    height: 650px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 12px double #E4C64A;
+    background: #0B346E;
+    border-radius: 50%;
+}
+
+#anime1title{
+    text-align:center;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+/*.balls{
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    width: 75px;
+    height: 75px;
+    border: transparent;
+    background: #011640;
+    top: 50%;
+    left: 50%;
+}*/
+
+img{
+   transform: scale(70%);
+}
+
+.balls1 {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    animation-name: ballTime;
+    animation-duration: 20s ;
+}
+
+.balls2 {
+    position: absolute;
+    top: 32%;
+    left: 40%;
+}
+
+.balls3 {
+    position: absolute;
+    top: 17%;
+    left: 38%;
+}
+
+#ball1{
+    animation: Spiraling 20s linear infinite;
+    transform-origin: 105px 0px;
+}
+
+#ball2{
+    animation: Spiraling 20s linear infinite;
+    transform-origin: 100px 238px;
+}
+
+#ball3{
+    animation: Spiraling 20s linear infinite;
+    transform-origin: 204px 138px;
+}
+
+
+@keyframes Spiraling{
+    0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(0.6turn);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+}
+
+#anime2title{
+    text-align:center;
+    font-size: 20px;
+    margin-top: 8rem;
+}
+
+#holder2{
+    width:650px;
+    height: 650px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 25px solid #42602D;
+    background: #DAC9A6;
+    border-radius: 50%;
+}
+
+#balls4 {
+    position: absolute;
+    top: 52.1%;
+    left: 65%;
+    animation: Spiraling2 20s linear infinite;
+    animation-duration: 20s ;
+    transform-origin:-100px -8px;
+}
+
+#balls5 {
+  position: absolute;
+  top: 50%;
+  left: -1%;
+  animation: Spiraling3 20s linear infinite;
+  animation-duration: 20s ;
+  transform-origin: 330px -10px;
+}
+
+#balls6 {
+  position: absolute;
+  top: -6%;
+  left: 27%;
+  animation: Spiraling4 20s linear infinite;
+  animation-duration: 20s ;
+  transform-origin: 100px 310px;
+}
+
+@keyframes Spiraling2{
+      0% {
+        transform: rotate(0deg);
+      }
+      25% {
+        transform: rotate(0.5turn) ;
+        transform-origin:-100px -8px;
+      }
+      50% {
+        transform: rotate(1.1turn) scale(150%) translateX(-110px) translateY(-30px);
+      }
+      75% {
+        transform: rotate(0.5turn);
+        transform-origin:-100px -8px;
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+}
+
+@keyframes Spiraling3{
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(0.5turn) ;
+      transform-origin:330px -10px;
+    }
+    50% {
+      transform: rotate(1.1turn) scale(150%) translateX(95px) translateY(-40px);
+
+    }
+    75% {
+      transform: rotate(0.5turn);
+      transform-origin: 330px -10px;
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+@keyframes Spiraling4{
+  0% {
+    transform: rotate(0deg);
+  }
+  12.5%{
+    transform: rotate(0.25turn) translateY(-55px);
+    transform-origin:150px 310px;
+  }
+  25% {
+    transform: rotate(0.5turn) translateY(-110px);
+    transform-origin:180px 310px;
+  }
+  50% {
+    transform: rotate(1.1turn) scale(150%) translateX(-5px) translateY(90px);
+    transform-origin:180px 310px;
+  }
+  75% {
+    transform: rotate(0.5turn) translateY(-115px);
+    transform-origin: 180px 310px;
+  }
+  87.5%{
+    transform: rotate(0.25turn) translateY(-55px);
+    transform-origin:150px 310px;
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
